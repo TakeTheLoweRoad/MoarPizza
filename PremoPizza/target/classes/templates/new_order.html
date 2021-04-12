@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<title>New Order</title>
+
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+ 
+.dropdown-content a:hover {background-color: #ddd;}
+ 
+.dropdown:hover .dropdown-content {display: block;}
+ 
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+</head>
+<body>
+<h1>Welcome to the order page</h1>
+
+<a th:href="@{/showNewCustomerForm}" class="btn btn-primary btn-sm mb-3"> New Customer? </a>
+
+<br><br>
+<div class="dropdown">
+  <button class="dropbtn">Order Items</button>
+  <div class="dropdown-content">
+    <a href="#">Soda</a>
+    <a href="#">Bread Sticks</a>
+    <a href="#">Small Pepperoni</a>
+    <a href="#">Medium Pepperoni</a>
+    <a href="#">Large Pepperoni</a>
+    <a href="#">Small House Special</a>
+    <a href="#">Medium House Special</a>
+    <a href="#">Large House Special</a>
+  </div>
+  
+  <span>Spaaaaaaaaace</span>
+  
+<div class="dropdown">
+  <button class="dropbtn">Zip Code</button>
+  <div class="dropdown-content">
+    <a href="#">55501</a>
+    <a href="#">55502</a>
+    <a href="#">55503</a>
+    <a href="#">55504</a>
+  </div>
+  
+  
+ 
+
+</body>
+</html>
